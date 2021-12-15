@@ -1,0 +1,204 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+#logo-sec {
+    margin-top: 85px;
+    text-align: center;
+}
+#content-sec {
+    margin-top: 37px;
+}
+#primary-text {
+    font-size: 1.375rem;
+    text-align: center;
+    color: #969696;
+    font-weight: 300;
+}
+#primary-text span {
+    font-weight: 700;
+    color: #151F29;
+}
+#secondary-text {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #151F29;
+    margin-top: 12px;
+}
+#form {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.input-design {
+    width: 280px;
+    height: 38px;
+    border: 1px solid #C2D3FF;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: #151F29;
+    padding: 0px 32px;
+}
+.input-design::placeholder {
+    font-size: 0.75rem;
+    color: #C2D3FF;
+}
+.input-design:focus {
+    outline: none;
+    border: 1px solid #151F29;
+}
+/* start of email validation error design */
+.error-input-design {
+    border: 1px solid #FF5263;
+}
+.error-input-design:focus {
+    border: 1px solid #FF5263;
+}
+.error-text {
+    display: none;
+}
+.error-validate {
+    display: block;
+}
+.error-validate p {
+    margin: 8px 0px 14px 0px;
+    text-align: center;
+    font-size: 0.625rem;
+    color: #FF5263;
+    font-style: italic;
+}
+/* End of email validation error */
+#submit-button input {
+    width: 280px;
+    height: 40px;
+    background: #4F7DF3;
+    box-shadow: 0px 7px 10px rgba(79, 125, 243, 0.25);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: transform 0.4s ease-out;
+}
+#submit-button input:hover {
+    background: rgba(79, 125, 243, 0.8);
+    transform: scale(0.99);
+}
+#submit-button input:focus {
+    border: 1px solid #151F29;
+}
+#content-image {
+    margin-top: 67px;
+    text-align: center;
+}
+#content-image img{
+    width: 320px;
+    height: 196px;
+}
+#footer {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 32px;
+}
+#social-links {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+#social-links a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(194, 211, 255, 0.5);
+    margin: 0px 15px;
+    transition: background 0.4s ease-out;
+}
+#social-links a:hover, #social-links:focus{
+    background: #4F7DF3;
+    border: 1px solid #4F7DF3;
+}
+#social-links a svg {
+    color: #4F7DF3;
+}
+#social-links a:hover svg, #social-links:focus svg{
+    color: #FFFFFF;
+}
+#fb-logo {
+    width: 8px;
+    height: 14.94px
+}
+#twitter-logo {
+    width: 14px;
+    height: 11.37px;
+}
+#insta-logo {
+    width: 14px;
+    height: 14px;
+}
+#copyright {
+    margin-top: 23px;
+    font-size: 0.625rem;
+    font-weight: 300;
+    color: #969696;
+}
+@media screen and (min-width:768px) {
+    #primary-text {
+        font-size: 3rem;
+    }
+    #secondary-text {
+        font-size: 1.25rem;
+    }
+    #form {
+        margin-top: 42px;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .input-design {
+        width: 420px;
+        height: 54px;
+        margin-right: 17px;
+        font-size: 1rem;
+        border-radius: 30px;
+    }
+    .input-design::placeholder {
+        font-size: 1rem;
+    }
+    .error-validate p{
+        margin-left: 30px;
+        text-align: left;
+    }
+    #submit-button input {
+        width: 200px;
+        height: 56px;
+        margin-top: 0px;
+        font-size: 1rem;
+        border-radius: 30px;
+    }
+    #content-image {
+        margin-top: 88px;
+    }
+    #content-image img {
+        width: 640px;
+        height: 391px;
+    }
+    #footer {
+        margin-top: 72px;
+        margin-bottom: 45px;
+    }
+}
